@@ -1,0 +1,136 @@
+/* Product */
+.product {
+    padding: 40px 0;
+    &__card {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    &-sale {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        color: var(--white);
+        background-color: var(--hover-text);
+        font-size: 1.1rem;
+        padding: 3px 10px;
+        z-index: 2;
+        &.sale {
+            display: block;
+        }
+    }
+    &__img {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+        &-before {
+            position: absolute;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &-after {
+            position: absolute;
+            img {
+                display: none;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    &__desc {
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 5px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: #bfbfbf;
+        height: 14px;
+    }
+    &__name {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 2px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+    &__price {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 2px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-weight: 500;
+        &-new {
+            color: var(--text-color);
+        }
+        &-old {
+            color: #bbb;
+            text-decoration: line-through;
+            &.disable {
+                display: none;
+            }
+        }
+    }
+    &__card:hover &__img-after img {
+        display: block;
+        animation: fadeIn linear 0.2s;
+    }
+    &__card:hover &__desc,
+    &__card:hover &__name,
+    &__card:hover &__price {
+        opacity: 0;
+    }
+
+    .product__add {
+        position: absolute;
+        left: 0;
+        text-align: center;
+        visibility: hidden;
+        width: 275px;
+        height: 45px;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        border: 1px solid var(--black-color);
+        color: var(--dark);
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        z-index: 2;
+        &:hover {
+            color: var(--white);
+            background-color: var(--black-color);
+        }
+    }
+    .product__card:hover .product__add {
+        visibility: inherit;
+        bottom: -36px;
+        transform: translateY(-40px);
+        transition: ease-in-out 0.3s;
+        text-decoration: none;
+    }
+
+    &-slide {
+        &.disable {
+            display: none;
+        }
+    }
+}

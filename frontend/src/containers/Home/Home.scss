@@ -1,0 +1,56 @@
+/* Tittle */
+.tittle {
+    text-align: center;
+    padding-top: 30px;
+
+    &__heading {
+        &-link {
+            color: var(--text-color);
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+        }
+
+        &-link:hover {
+            color: var(--hover-text);
+            text-decoration: none;
+        }
+    }
+
+    &__section {
+        &-link {
+            color: var(--text-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding: 0 5px;
+            position: relative;
+        }
+
+        &-link:hover {
+            color: var(--hover-text);
+            text-decoration: none;
+        }
+
+        &-link::after {
+            position: absolute;
+            content: "/";
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            color: #bfbfbf;
+        }
+
+        &-link:last-child::after {
+            display: none;
+        }
+    }
+}
+
+/* Banner */
+.banner-home {
+    img {
+        cursor: pointer;
+        width: 100%;
+    }
+}

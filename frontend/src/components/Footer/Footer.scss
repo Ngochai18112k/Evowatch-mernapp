@@ -1,0 +1,127 @@
+/* Footer */
+#footer {
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    text-align: left;
+
+    .row {
+        padding-top: 40px;
+    }
+}
+.footer__logo {
+    max-height: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.list__menu {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.list__item {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 3px;
+
+    i {
+        padding-right: 5px;
+    }
+}
+.list__link {
+    color: var(--text-color);
+
+    &:hover {
+        text-decoration: none;
+        color: var(--hover-text);
+    }
+}
+.footer__tittle {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    letter-spacing: 0.14rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+}
+.footer__item {
+    margin-bottom: 10px;
+}
+.footer__link {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--hover-text);
+    }
+}
+.footer__text {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    letter-spacing: 0.1rem;
+}
+.footer__input {
+    height: 40px;
+    background-color: #f8f8f8;
+    line-height: 40px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0 10px;
+    outline: none;
+    background: #f0f0f0;
+    border: 1px solid transparent;
+    margin-bottom: 8px;
+}
+.footer__pay-list {
+    list-style: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.footer__pay-item {
+    padding: 0 5px;
+}
+.footer__end {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    padding-bottom: 5px;
+    letter-spacing: 0.07rem;
+
+    a {
+        color: var(--text-color);
+    }
+
+    a:hover {
+        color: var(--hover-text);
+        text-decoration: none;
+    }
+}
+/* Back-to-top */
+.back-to-top {
+    position: fixed;
+    right: -30px;
+    bottom: 60px;
+    z-index: 999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 35px;
+    color: #1c1c1c;
+    top: auto !important;
+    transform: rotate(-90deg);
+    opacity: 0.7;
+
+    &:hover {
+        color: var(--hover-text);
+    }
+}

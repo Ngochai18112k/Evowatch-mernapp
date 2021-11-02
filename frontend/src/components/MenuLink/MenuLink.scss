@@ -1,0 +1,7 @@
+.menu__link {
+    color: var(--text-color);
+    &:hover {
+        text-decoration: none;
+        color: var(--hover-text);
+    }
+}

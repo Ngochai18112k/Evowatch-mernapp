@@ -1,0 +1,260 @@
+/* Log in - Sign up*/
+#login {
+    margin-bottom: 30px;
+    margin-top: 0;
+    .login__tittle {
+        text-align: center;
+        font-size: 2.8rem;
+        color: var(--text-color);
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+        padding-top: 30px;
+        &-text {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            font-weight: 400;
+            text-align: center;
+            padding: 20px 0;
+        }
+    }
+    .login__desc {
+        text-align: center;
+        font-size: 1.6rem;
+        color: var(--text-color);
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+    }
+    .login__social {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        &-link {
+            cursor: pointer;
+            img {
+                width: 140px;
+                padding: 0 5px;
+            }
+        }
+    }
+    .login__form {
+        &-input {
+            padding-bottom: 30px;
+        }
+        &-input.error {
+            .message-error {
+                margin-bottom: 0;
+                display: block;
+            }
+            .login__form-in {
+                border-color: #e74c3c;
+            }
+        }
+        &-input.success {
+            .login__form-in {
+                border-color: #2ecc71;
+            }
+        }
+        .message-error {
+            display: none;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: #e74c3c;
+            padding: 5px 0;
+        }
+        &-text {
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            span {
+                color: red;
+            }
+        }
+        &-in {
+            width: 100%;
+            height: 50px;
+            background-color: #f7f7f7;
+            color: #55595c;
+            font-size: 1.4rem;
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: none;
+            padding: 0 15px;
+        }
+        &-forget {
+            display: block;
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--hover-text);
+            font-weight: 500;
+            letter-spacing: 0.06rem;
+            padding: 15px 0;
+            &:hover {
+                text-decoration: none;
+                color: var(--text-color);
+            }
+        }
+        &-end {
+            text-align: center;
+            font-size: 1.3rem;
+            color: var(--text-color);
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            a {
+                color: var(--hover-text);
+            }
+            a:hover {
+                text-decoration: none;
+                color: var(--text-color);
+            }
+        }
+        button {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .btns.login__btn {
+        min-width: 290px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+//Account
+.account__left {
+    padding: 40px 0;
+    .heading {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin: 5px 0;
+    }
+    .hello {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--text-color);
+        padding-bottom: 15px;
+    }
+    .list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .item {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--text-color);
+        padding-bottom: 10px;
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        &.active a {
+            color: var(--hover-text);
+        }
+    }
+}
+.profile {
+    display: none;
+    padding: 40px 0;
+    &.active {
+        display: block;
+    }
+    .heading {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin: 5px 0;
+    }
+    .profile__list {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 15px;
+
+        .profile__item {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-color);
+            padding-bottom: 10px;
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.orders-my {
+    display: none;
+    padding: 40px 0;
+    &.active {
+        display: block;
+    }
+    .heading {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin: 5px 0;
+    }
+    table {
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        thead {
+            tr {
+                th {
+                    font-size: 14px;
+                    color: var(--text-color);
+                    border: 1px solid #e1e1e1;
+                    padding: 5px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    font-size: 14px;
+                    color: var(--text-color);
+                    border: 1px solid #e1e1e1;
+                    padding: 5px;
+                    button {
+                        border: none;
+                        background-color: lightgreen;
+                        padding: 3px 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .orders__no {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+    }
+}
+.profile__change {
+    display: none;
+    padding: 40px 0;
+    &.active {
+        display: block;
+    }
+    .heading {
+        font-size: 2rem;
+        font-weight: 400;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin: 5px 0;
+    }
+}
