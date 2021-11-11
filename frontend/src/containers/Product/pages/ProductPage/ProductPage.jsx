@@ -862,75 +862,91 @@ function ProductPage() {
                             </div>
                         ) : (
                             <>
-                                <div className="sort hide-on-mobile">
-                                    <span className="sort__tittle">
-                                        Xếp theo:
-                                    </span>
-                                    <ul className="sort__list">
-                                        <li
-                                            className={`sort__item ${
-                                                toggleSort === 1 ? "active" : ""
-                                            }`}
-                                            onClick={sortAZ}
-                                        >
-                                            <div
-                                                className="sort__link"
-                                                onClick={() => onToggleSort(1)}
-                                            >
-                                                <i></i>
-                                                Tên A-Z
-                                            </div>
-                                        </li>
-                                        <li
-                                            className={`sort__item ${
-                                                toggleSort === 2 ? "active" : ""
-                                            }`}
-                                            onClick={sortZA}
-                                        >
-                                            <div
-                                                className="sort__link"
-                                                onClick={() => onToggleSort(2)}
-                                            >
-                                                <i></i>
-                                                Tên Z-A
-                                            </div>
-                                        </li>
-                                        <li
-                                            className={`sort__item ${
-                                                toggleSort === 3 ? "active" : ""
-                                            }`}
-                                            onClick={sortGiaTang}
-                                        >
-                                            <div
-                                                className="sort__link"
-                                                onClick={() => onToggleSort(3)}
-                                            >
-                                                <i></i>
-                                                Giá thấp đến cao
-                                            </div>
-                                        </li>
-                                        <li
-                                            className={`sort__item ${
-                                                toggleSort === 4 ? "active" : ""
-                                            }`}
-                                            onClick={sortGiaGiam}
-                                        >
-                                            <div
-                                                className="sort__link"
-                                                onClick={() => onToggleSort(4)}
-                                            >
-                                                <i></i>
-                                                Giá cao xuống thấp
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
                                 {loading ? (
                                     <Loader />
                                 ) : error ? (
                                     <Message variant="danger">{error}</Message>
                                 ) : (
                                     <>
+                                        <div className="sort hide-on-mobile">
+                                            <span className="sort__tittle">
+                                                Xếp theo:
+                                            </span>
+                                            <ul className="sort__list">
+                                                <li
+                                                    className={`sort__item ${
+                                                        toggleSort === 1
+                                                            ? "active"
+                                                            : ""
+                                                    }`}
+                                                    onClick={sortAZ}
+                                                >
+                                                    <div
+                                                        className="sort__link"
+                                                        onClick={() =>
+                                                            onToggleSort(1)
+                                                        }
+                                                    >
+                                                        <i></i>
+                                                        Tên A-Z
+                                                    </div>
+                                                </li>
+                                                <li
+                                                    className={`sort__item ${
+                                                        toggleSort === 2
+                                                            ? "active"
+                                                            : ""
+                                                    }`}
+                                                    onClick={sortZA}
+                                                >
+                                                    <div
+                                                        className="sort__link"
+                                                        onClick={() =>
+                                                            onToggleSort(2)
+                                                        }
+                                                    >
+                                                        <i></i>
+                                                        Tên Z-A
+                                                    </div>
+                                                </li>
+                                                <li
+                                                    className={`sort__item ${
+                                                        toggleSort === 3
+                                                            ? "active"
+                                                            : ""
+                                                    }`}
+                                                    onClick={sortGiaTang}
+                                                >
+                                                    <div
+                                                        className="sort__link"
+                                                        onClick={() =>
+                                                            onToggleSort(3)
+                                                        }
+                                                    >
+                                                        <i></i>
+                                                        Giá thấp đến cao
+                                                    </div>
+                                                </li>
+                                                <li
+                                                    className={`sort__item ${
+                                                        toggleSort === 4
+                                                            ? "active"
+                                                            : ""
+                                                    }`}
+                                                    onClick={sortGiaGiam}
+                                                >
+                                                    <div
+                                                        className="sort__link"
+                                                        onClick={() =>
+                                                            onToggleSort(4)
+                                                        }
+                                                    >
+                                                        <i></i>
+                                                        Giá cao xuống thấp
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                         <div className="row">
                                             <ListProductPage
                                                 products={products}
