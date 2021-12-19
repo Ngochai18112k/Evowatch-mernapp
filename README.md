@@ -2,6 +2,8 @@
 
 > eCommerce platform built with the MERN stack & Redux.
 
+# Deploy to Heroku: https://evowatch-mernapp.herokuapp.com/
+
 ## Features
 
 -   Full featured shopping cart
